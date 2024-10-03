@@ -50,28 +50,27 @@
 
     }
     
-    .heading__link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        scroll-behavior: smooth;
-        box-sizing: border-box;
-        border: 1px solid $color-text;
-        width: 247px;
-        height: 66px;
-        border-radius: 60px;
-        background: $color-text;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 141.69%;
-        color: $bg-color;
-        text-decoration: none;
+    &__link {
 
-        &:hover {
+        &_button {
+            border: 1px solid $color-text;
+            width: 247px;
+            height: 66px;
+            box-sizing: border-box;
+            border-radius: 60px;
+            background: $color-text;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            color: $bg-color;
             text-decoration: none;
-            color: $color-text;
-            background: $bg-color;
+            
+            &:hover {
+                text-decoration: none;
+                color: $color-text;
+                background: $bg-color;
+            }
         }
     }
 }
@@ -181,3 +180,5 @@
         }
     }
 }
+
+@import 'mobail';

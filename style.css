@@ -38,15 +38,11 @@
   margin-bottom: 48px;
   font-family: Montserrat;
 }
-.heading .heading__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  scroll-behavior: smooth;
-  box-sizing: border-box;
+.heading__link_button {
   border: 1px solid black;
   width: 247px;
   height: 66px;
+  box-sizing: border-box;
   border-radius: 60px;
   background: black;
   font-family: Montserrat;
@@ -56,7 +52,7 @@
   color: white;
   text-decoration: none;
 }
-.heading .heading__link:hover {
+.heading__link_button:hover {
   text-decoration: none;
   color: black;
   background: white;
@@ -153,4 +149,83 @@
   line-height: 39px;
   text-align: left;
   color: black;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 173px);
+    padding-right: calc(50% - 173px);
+  }
+  .top {
+    height: 100%;
+    min-width: 320px;
+    background-image: url(img/mintopstars.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .heading {
+    width: 343px;
+    padding-top: 147px;
+    padding-bottom: 131px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .heading__texts {
+    width: 296px;
+  }
+  .heading__texts_title {
+    min-width: 265px;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+  }
+  .heading__texts_text {
+    width: 296px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .heading__link {
+    display: flex;
+    justify-content: center;
+  }
+  .heading__link_button {
+    font-size: 16px;
+    width: 285px;
+    height: 55px;
+  }
+  .heading__link_button:hover {
+    border: 1px solid black;
+    background: black;
+    color: white;
+  }
+  .of-games {
+    display: none;
+  }
+  .of-gemes__block {
+    display: none;
+  }
+  .mav {
+    display: none;
+  }
+}
+@media (max-width: 376px) {
+  .center {
+    padding-left: calc(50% - 150px);
+    padding-right: calc(50% - 150px);
+  }
+  .heading {
+    width: 300px;
+  }
+  .heading__texts {
+    width: 286px;
+  }
+  .of-games {
+    display: none;
+  }
+  .of-gemes__block {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
