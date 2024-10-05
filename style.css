@@ -81,6 +81,17 @@
   gap: 32px;
 }
 
+.block-mod {
+  display: none;
+}
+.block-mod__title {
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+  color: white;
+}
 .mav {
   padding-top: 94px;
 }
@@ -121,6 +132,8 @@
 }
 .link__card_img {
   border-radius: 30px;
+  width: 100%;
+  height: 100%;
 }
 .link__card_text {
   padding: 32px;
@@ -149,6 +162,41 @@
   line-height: 39px;
   text-align: left;
   color: black;
+}
+
+.link-mod__card_text_text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: black;
+}
+.link-mod__card_text_button-2 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+  color: white;
+  width: 285px;
+  height: 55px;
+  background-color: black;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 60px;
+}
+
+.footer {
+  background-color: rgb(189, 237, 53);
+  color: black;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+  padding-top: 61px;
+  padding-bottom: 60px;
 }
 
 @media (max-width: 767px) {
@@ -210,6 +258,48 @@
   .mav {
     display: none;
   }
+  .block-mod {
+    display: block;
+  }
+  .block-mod__title {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: left;
+    color: white;
+  }
+  .block-mod__carts {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-bottom: 48px;
+  }
+  .link-mod__card {
+    width: 343px;
+  }
+  .link-mod__card_text {
+    padding: 29px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .link-mod__card_text_button {
+    display: none;
+  }
+  .link-mod__card_text_button-2 {
+    margin-top: 16px;
+  }
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
 }
 @media (max-width: 376px) {
   .center {
@@ -227,5 +317,8 @@
   }
   .of-gemes__block {
     display: none;
+  }
+  .link-mod__card {
+    max-width: 300px;
   }
 }/*# sourceMappingURL=style.css.map */

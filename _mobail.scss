@@ -70,6 +70,59 @@
     .mav {
         display: none;
     }
+
+    .block-mod {
+        display: block;
+
+        &__title {
+            padding-top: 48px;
+            padding-bottom: 48px;
+            font-family: Montserrat;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            text-align: left;
+            color: $bg-color;
+        }
+
+        &__carts {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            padding-bottom: 48px;
+        }
+    }
+
+    .link-mod {
+
+        &__card {
+            width: 343px;
+
+            &_text {
+                padding: 29px;
+                padding-bottom: 32px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+
+                &_button {
+                    display: none;
+                }
+
+                &_button-2 {
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 376px) {
@@ -93,5 +146,9 @@
 
     .of-gemes__block {
         display: none;
+    }
+    
+    .link-mod__card {
+        max-width: 300px;
     }
 }
