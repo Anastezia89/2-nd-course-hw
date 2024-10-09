@@ -38,15 +38,11 @@
   margin-bottom: 48px;
   font-family: Montserrat;
 }
-.heading .heading__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  scroll-behavior: smooth;
-  box-sizing: border-box;
+.heading__link_button {
   border: 1px solid black;
   width: 247px;
   height: 66px;
+  box-sizing: border-box;
   border-radius: 60px;
   background: black;
   font-family: Montserrat;
@@ -56,7 +52,7 @@
   color: white;
   text-decoration: none;
 }
-.heading .heading__link:hover {
+.heading__link_button:hover {
   text-decoration: none;
   color: black;
   background: white;
@@ -85,6 +81,17 @@
   gap: 32px;
 }
 
+.block-mod {
+  display: none;
+}
+.block-mod__title {
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+  color: white;
+}
 .mav {
   padding-top: 94px;
 }
@@ -125,6 +132,8 @@
 }
 .link__card_img {
   border-radius: 30px;
+  width: 100%;
+  height: 100%;
 }
 .link__card_text {
   padding: 32px;
@@ -153,4 +162,163 @@
   line-height: 39px;
   text-align: left;
   color: black;
+}
+
+.link-mod__card_text_text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: black;
+}
+.link-mod__card_text_button-2 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+  color: white;
+  width: 285px;
+  height: 55px;
+  background-color: black;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 60px;
+}
+
+.footer {
+  background-color: rgb(189, 237, 53);
+  color: black;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+  padding-top: 61px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 173px);
+    padding-right: calc(50% - 173px);
+  }
+  .top {
+    height: 100%;
+    min-width: 320px;
+    background-image: url(img/mintopstars.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .heading {
+    width: 343px;
+    padding-top: 147px;
+    padding-bottom: 131px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .heading__texts {
+    width: 296px;
+  }
+  .heading__texts_title {
+    min-width: 265px;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+  }
+  .heading__texts_text {
+    width: 296px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .heading__link {
+    display: flex;
+    justify-content: center;
+  }
+  .heading__link_button {
+    font-size: 16px;
+    width: 285px;
+    height: 55px;
+  }
+  .heading__link_button:hover {
+    border: 1px solid black;
+    background: black;
+    color: white;
+  }
+  .of-games {
+    display: none;
+  }
+  .of-gemes__block {
+    display: none;
+  }
+  .mav {
+    display: none;
+  }
+  .block-mod {
+    display: block;
+  }
+  .block-mod__title {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: left;
+    color: white;
+  }
+  .block-mod__carts {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-bottom: 48px;
+  }
+  .link-mod__card {
+    width: 343px;
+  }
+  .link-mod__card_text {
+    padding: 29px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .link-mod__card_text_button {
+    display: none;
+  }
+  .link-mod__card_text_button-2 {
+    margin-top: 16px;
+  }
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 376px) {
+  .center {
+    padding-left: calc(50% - 150px);
+    padding-right: calc(50% - 150px);
+  }
+  .heading {
+    width: 300px;
+  }
+  .heading__texts {
+    width: 286px;
+  }
+  .of-games {
+    display: none;
+  }
+  .of-gemes__block {
+    display: none;
+  }
+  .link-mod__card {
+    max-width: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */
