@@ -95,17 +95,18 @@
                 display: flex;
                 flex-wrap: wrap;
                 gap: 32px;
-
-                 
             }
         }
     }
 }
 
 .block-mod {
-    display: none;
+    // display: none;
+    padding-bottom: 144px;
 
     &__title {
+        padding-top: 46px;
+        padding-bottom: 72px;
         font-family: Montserrat;
         font-size: 64px;
         font-weight: 700;
@@ -115,7 +116,9 @@
     }
 
     &__carts {
-
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
     }
 }
 
@@ -203,37 +206,74 @@
 .link-mod {
     
     &__card {
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+
+        &:hover {
+            transform: none;
+        }
+
+        &_img {
+            border-radius: 30px;
+            width: 600px;
+            height: 500px;
+        }
 
         &_text {
-            
-            &_button {
+            padding: 48px;
+            min-width: 504px;
 
+            &_button {
+                display: none;
+            }
+
+            &_title {
+                font-family: Montserrat;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 59px;
+                text-align: left;
             }
 
             &_text {
+                padding-top: 24px;
+                padding-bottom: 36px;
                 font-family: Montserrat;
-                font-size: 16px;
+                font-size: 24px;
                 font-weight: 400;
-                line-height: 20px;
+                line-height: 32px;
                 text-align: left;
                 color: $color-text;
             }
 
             &_button-2 {
                 font-family: Montserrat;
-                font-size: 16px;
+                font-size: 24px;
                 font-weight: 600;
                 line-height: 141.69%;
                 text-align: center;
                 color: $bg-color;
-                width: 285px;
-                height: 55px;
+                width: 247px;
+                height: 66px;
                 background-color: $color-text;
                 box-sizing: border-box;
                 border: 1px solid $color-text;
                 border-radius: 60px;
+
+                &:hover {
+                    color: $color-text;
+                    background-color: $bg-color;
+                }
             }
         }
+    }
+
+    &__card-1 {
+        display: flex;
+        flex-direction: row;
     }
 }
 
