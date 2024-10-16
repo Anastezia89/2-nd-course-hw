@@ -18,7 +18,7 @@
     background-position: center;
     background-size: cover;
 
-    &__header {
+    .top__header {
         
     }
 }
@@ -29,7 +29,7 @@
     &__texts {
         width: 768px;
 
-        &_title {
+        &__title {
             font-size: 64px;
             font-weight: 700;
             line-height: 78px;
@@ -37,7 +37,7 @@
             font-family: Montserrat;
         }
 
-        &_text {
+        &__text {
             width: 720px;
             font-size: 24px;
             font-weight: 400;
@@ -51,26 +51,26 @@
     }
     
     &__link {
+        border: 1px solid $color-text;
+        width: 247px;
+        height: 66px;
+        box-sizing: border-box;
+        border-radius: 60px;
+        background: $color-text;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        color: $bg-color;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        &_button {
-            border: 1px solid $color-text;
-            width: 247px;
-            height: 66px;
-            box-sizing: border-box;
-            border-radius: 60px;
-            background: $color-text;
-            font-family: Montserrat;
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 141.69%;
-            color: $bg-color;
+        &:hover {
             text-decoration: none;
-            
-            &:hover {
-                text-decoration: none;
-                color: $color-text;
-                background: $bg-color;
-            }
+            color: $color-text;
+            background: $bg-color;
         }
     }
 }
@@ -85,27 +85,27 @@
     &__block {
         padding-bottom: 50px;
 
-        &_carts {
+        &__carts {
             display: flex;
             flex-wrap: nowrap;
             margin-top: 72px;
             column-gap: 32px;
 
-            &_block {
+            &__block {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 32px;
-
-                 
             }
         }
     }
 }
 
 .block-mod {
-    display: none;
+    padding-bottom: 144px;
 
     &__title {
+        padding-top: 46px;
+        padding-bottom: 72px;
         font-family: Montserrat;
         font-size: 64px;
         font-weight: 700;
@@ -115,7 +115,9 @@
     }
 
     &__carts {
-
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
     }
 }
 
@@ -147,9 +149,12 @@
 
 .link {
     text-decoration: none; 
+    display: block;
+    transition: transform 0.3s ease;
 
     &:hover {
         text-decoration: none;
+        transform: scale(1.06);
     }
 
     &__card {
@@ -157,38 +162,35 @@
         background: $bg-color;
         border-radius: 30px;
 
-        &:hover {
-            transform: scale(1.06);
-        }
-
-        &_img {
+        &__img {
             border-radius: 30px;
             width: 100%;
             height: 100%;
         }
 
-        &_text {
+        &__text {
             padding: 32px;
             box-sizing: border-box;
 
-            &_button {
+            &__number {
                 color: $color-text;
                 font-family: Montserrat;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 110%;
                 letter-spacing: 0px;
-                text-align: left;
                 border-radius: 52.58px;
                 background: rgb(247, 247, 247);
                 width: 108px;
                 height: 36px;
-                text-align: center;
                 border: none;
                 margin-bottom: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             } 
             
-            &_title {
+            &__title {
                 font-family: Montserrat;
                 font-size: 32px;
                 font-weight: 700;
@@ -200,42 +202,79 @@
     }
 }
 
-.link-mod {
-    
-    &__card {
 
-        &_text {
-            
-            &_button {
+.article__card {
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: $bg-color;
 
-            }
+    &:hover {
+        transform: none;
+    }
 
-            &_text {
-                font-family: Montserrat;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 20px;
-                text-align: left;
+    &__img {
+        border-radius: 30px;
+        width: 600px;
+        height: 500px;
+    }
+
+    &__text {
+        padding: 48px;
+        min-width: 504px;
+
+        &__number {
+            display: none;
+        }
+
+        &__title {
+            font-family: Montserrat;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            text-align: left;
+        }
+
+        &__text {
+            padding-top: 24px;
+            padding-bottom: 36px;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: left;
+            color: $color-text;
+        }
+
+        &__number-2 {
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            text-align: center;
+            color: $bg-color;
+            width: 247px;
+            height: 66px;
+            background-color: $color-text;
+            box-sizing: border-box;
+            border: 1px solid $color-text;
+            border-radius: 60px;
+
+            &:hover {
                 color: $color-text;
-            }
-
-            &_button-2 {
-                font-family: Montserrat;
-                font-size: 16px;
-                font-weight: 600;
-                line-height: 141.69%;
-                text-align: center;
-                color: $bg-color;
-                width: 285px;
-                height: 55px;
-                background-color: $color-text;
-                box-sizing: border-box;
-                border: 1px solid $color-text;
-                border-radius: 60px;
+                background-color: $bg-color;
             }
         }
     }
 }
+
+.article__card-1 {
+    display: flex;
+    flex-direction: row;
+}
+
 
 .footer {
     background-color: $foot-bg;
