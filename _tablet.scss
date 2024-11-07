@@ -1,9 +1,81 @@
 
+@media (max-width: 1250px) {
+
+    .center {
+        padding-left: calc(50% - 475px);
+        padding-right: calc(50% - 475px);
+    }
+
+    .of-gemes__block__carts {
+        display: none;
+    }
+
+    .games-pc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 32px;
+        row-gap: 32px;
+        margin-top: 72px;
+    }
+
+    .article__card {
+        height: 420px;
+        width: 950px;
+    }
+
+    .article__card__text {
+        padding: 28px;
+    }
+
+    .article__card__text__title {
+        font-family: Montserrat;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 56px;
+        text-align: left;
+    }
+
+    .article__card__text__text {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left;
+        width: 420px;
+        padding-top: 16px;
+        padding-bottom: 24px;
+    }
+
+    .article__card__text__number-2 {
+        height: 54px;
+        width: 232px;
+    }
+
+}
+
 @media (max-width: 1024px) {
 
     .center {
-        padding-left: calc(50% - 408px);
-        padding-right: calc(50% - 408px);
+        padding-left: calc(50% - 375px);
+        padding-right: calc(50% - 375px);
+    }
+
+    .heading__texts {
+        width: 698px;
+    }
+
+    .heading__texts__title {
+        font-size: 58px;
+        line-height: 70px;
+    }
+
+    .heading__texts__text {
+        width: 600px;
+        font-size: 22px;
+        line-height: 26px;
+        margin-top: 24px;
+        margin-bottom: 48px;
     }
 
     .of-gemes {
@@ -14,8 +86,13 @@
         display: block;
     }
 
+    .article {
+        column-gap: 26px;
+        row-gap: 26px;
+    }
+
     .article__card {
-        width: 378px;
+        width: 362px;
         background: $bg-color;
         border-radius: 30px;
         height: 100%;
@@ -66,8 +143,34 @@
 
 @media (max-width: 787px) {
 
-    .block-mod {
-        padding-left: 180px;
-        padding-right: 180px;
+    .center {
+        padding-left: calc(50% - 312px);
+        padding-right: calc(50% - 312px);
+    }
+
+    .heading__texts {
+        width: 624px;
+    }
+
+    .heading__texts__title {
+        font-size: 52px;
+        line-height: 72px;
+    }
+
+    .heading__texts__text {
+        width: 600px;
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 24px;
+        margin-bottom: 48px;
+    }
+
+    .block-mod__title {
+        font-size: 52px;
+        line-height: 72px;
+    }
+
+    .article {
+        justify-content: center;
     }
 }
