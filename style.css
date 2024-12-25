@@ -84,6 +84,10 @@
   gap: 32px;
 }
 
+.games-pc {
+  display: none;
+}
+
 .block-mod {
   padding-bottom: 144px;
 }
@@ -189,6 +193,7 @@
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
   background-color: white;
 }
 .article__card:hover {
@@ -196,12 +201,12 @@
 }
 .article__card__img {
   border-radius: 30px;
-  width: 600px;
-  height: 500px;
+  width: 50%;
+  height: 100%;
 }
 .article__card__text {
   padding: 48px;
-  min-width: 504px;
+  width: 100%;
 }
 .article__card__text__number {
   display: none;
@@ -214,6 +219,7 @@
   text-align: left;
 }
 .article__card__text__text {
+  width: 497px;
   padding-top: 24px;
   padding-bottom: 36px;
   font-family: Montserrat;
@@ -249,6 +255,7 @@
 .article__card-1 {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
 }
 
 .footer {
@@ -263,6 +270,151 @@
   padding-bottom: 60px;
 }
 
+@media (max-width: 1250px) {
+  .center {
+    padding-left: calc(50% - 475px);
+    padding-right: calc(50% - 475px);
+  }
+  .of-gemes__block__carts {
+    display: none;
+  }
+  .games-pc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+    row-gap: 32px;
+    margin-top: 72px;
+  }
+  .article__card {
+    height: 420px;
+    width: 950px;
+  }
+  .article__card__text {
+    padding: 28px;
+  }
+  .article__card__text__title {
+    font-family: Montserrat;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: left;
+  }
+  .article__card__text__text {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    width: 420px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+  .article__card__text__number-2 {
+    height: 54px;
+    width: 232px;
+  }
+}
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 375px);
+    padding-right: calc(50% - 375px);
+  }
+  .heading__texts {
+    width: 698px;
+  }
+  .heading__texts__title {
+    font-size: 58px;
+    line-height: 70px;
+  }
+  .heading__texts__text {
+    width: 600px;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+  .of-gemes {
+    display: none;
+  }
+  .block-mod {
+    display: block;
+  }
+  .article {
+    -moz-column-gap: 26px;
+         column-gap: 26px;
+    row-gap: 26px;
+  }
+  .article__card {
+    width: 362px;
+    background: white;
+    border-radius: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .article__card:hover {
+    transform: scale(1.06);
+  }
+  .article__card__text {
+    padding: 32px;
+  }
+  .article__card__img {
+    height: 100%;
+    width: 100%;
+  }
+  .article__card__text__title {
+    width: 300px;
+    font-family: Montserrat;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: left;
+  }
+  .article__card__text__text {
+    width: 300px;
+    padding-top: 18px;
+    padding-bottom: 30px;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: black;
+  }
+  .article__card__text__number-2 {
+    width: 285px;
+    height: 66px;
+  }
+}
+@media (max-width: 787px) {
+  .center {
+    padding-left: calc(50% - 312px);
+    padding-right: calc(50% - 312px);
+  }
+  .heading__texts {
+    width: 624px;
+  }
+  .heading__texts__title {
+    font-size: 52px;
+    line-height: 72px;
+  }
+  .heading__texts__text {
+    width: 600px;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+  .block-mod__title {
+    font-size: 52px;
+    line-height: 72px;
+  }
+  .article {
+    justify-content: center;
+  }
+}
 @media (max-width: 767px) {
   .center {
     padding-left: calc(50% - 173px);
@@ -423,8 +575,14 @@
   .article__card__text {
     padding: 16px;
   }
+  .article__card__text__title {
+    max-width: 248px;
+  }
+  .article__card__text__text {
+    max-width: 248px;
+  }
   .article__card__text__number-2 {
-    width: 268px;
+    max-width: 248px;
   }
   .article__card__text__number-2 .article__card__text__number-2:hover {
     color: white;

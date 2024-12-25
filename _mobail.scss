@@ -194,8 +194,16 @@
         padding: 16px;
     }
 
+    .article__card__text__title {
+        max-width: 248px;
+    }
+
+    .article__card__text__text {
+        max-width: 248px;
+    }
+
     .article__card__text__number-2 {
-        width: 268px;
+        max-width: 248px;
 
         .article__card__text__number-2:hover {
             color: $bg-color;
