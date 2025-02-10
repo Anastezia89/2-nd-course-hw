@@ -73,6 +73,56 @@ function gameTwo() {
 }
 
 
+// Игра № 3
+
+function gameThree() {
+let text = String(prompt("Введите текст и мы перевернём его!"));
+text = text.split('').reverse().join("").toLowerCase();
+
+alert(text);
+}
+
+
+// Игра № 5
+
+function gameFive() {
+
+    const quiz = [
+        {
+            question: "Какого цвета небо?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+
+    let allAnswer = 0;
+    for (let i = 0; i < quiz.length; i++) {
+        
+        userAnswer = Number(prompt(`
+        Ответьте на вопрос: ${quiz[i].question}
+        Выберите один из вариантов ответа (укажите его номер) 
+        ${quiz[i].options}`));
+
+        if (userAnswer === quiz[i][`correctAnswer`]) {
+            allAnswer++;
+            alert('Верно!');
+        } else {
+            alert('Неверно.');
+        }
+    }
+    alert(`Ваши верные ответы - ${allAnswer}.`);
+}
+
 
 
 
