@@ -13,8 +13,9 @@ function gameOne() {
             alert(`Число ${numberUser} больше загаданного.`);
         } else if (numberUser <= generateRandom) {
             alert(`Число ${numberUser} меньше загаданного.`);
+        } else {
+            break;
         }
-        
     } while (numberUser !== generateRandom);
 }
 
@@ -76,10 +77,16 @@ function gameTwo() {
 // Игра № 3
 
 function gameThree() {
-let text = String(prompt("Введите текст и мы перевернём его!"));
-text = text.split('').reverse().join("").toLowerCase();
+    let text = String(prompt("Введите текст и мы перевернём его!"));
 
-alert(text);
+    if (String(text)) {
+        text = text.split('').reverse().join("").toLowerCase();
+        alert(text);
+    } else if (text === null && text == 0){
+        alert("Попробуйте ещё раз.");
+    } else {
+        alert("Попробуйте ещё раз.");
+    }
 }
 
 

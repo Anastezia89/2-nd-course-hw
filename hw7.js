@@ -33,7 +33,7 @@ console.log(Math.min(52, 53, 49, 77, 21, 32));
 console.log(Math.max(52, 53, 49, 77, 21, 32));
 
 // Задание 5
-function random(params) {
+function random() {
     return Math.floor(Math.random() * 10) + 1;
 }
 
@@ -64,10 +64,8 @@ console.log(currentDate);
 
 // Задание 10
 function formatDate(date) {
-    const days = [ "Понедельник", "Вторник", "Среда", "Четверг",
-    "Пятница", "Суббота", "Воскресенье"];
-    const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-    "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+    const days = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"];
+    const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
     const year = date.getFullYear();
     const day = date.getDate();
     const month = date.getMonth();
