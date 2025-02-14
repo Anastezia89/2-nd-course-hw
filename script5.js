@@ -77,13 +77,11 @@ function gameTwo() {
 // Игра № 3
 
 function gameThree() {
-    let text = String(prompt("Введите текст и мы перевернём его!"));
+    let text = prompt("Введите текст и мы перевернём его!");
 
     if (String(text)) {
         text = text.split('').reverse().join("").toLowerCase();
         alert(text);
-    } else if (text === null && text == 0){
-        alert("Попробуйте ещё раз.");
     } else {
         alert("Попробуйте ещё раз.");
     }

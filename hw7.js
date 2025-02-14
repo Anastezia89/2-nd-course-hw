@@ -70,13 +70,16 @@ function formatDate(date) {
     const day = date.getDate();
     const month = date.getMonth();
     const dayOfWeek = days[date.getDay()];
-    const hours = date.getHours();
-    const minutes = date.getMinutes();
-    const seconds = date.getSeconds();
+    let hour = date.getHours();
+    let formatHour = String(hour).padStart(2, '0');
+    let minutes = date.getMinutes();
+    let formatMinutes = String(minutes).padStart(2, '0');
+    let seconds = date.getSeconds();
+    let formatSeconds = String(seconds).padStart(2, '0');
 
     return `
     Дата : ${day} ${months[month]} ${year} - это ${dayOfWeek}
-    Время : ${hours}:${minutes}:${seconds}`;
+    Время : ${formatHour}:${formatMinutes}:${formatSeconds}`;
 }
 
 console.log(formatDate(new Date()));
