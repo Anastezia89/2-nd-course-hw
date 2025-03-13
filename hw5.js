@@ -58,7 +58,7 @@ function fifth() {
     if (isNaN(x) || isNaN(y)) {
         console.log('Одно или оба значения не являются числом');
     } else if (Number(x) || Number(y)) {
-        console.log (`Произведение чисел ${Number(x) * Number(y)}`);
+        console.log(`Произведение чисел ${Number(x) * Number(y)}`);
     }
 }
 
