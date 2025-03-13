@@ -79,7 +79,7 @@ function gameTwo() {
 function gameThree() {
     let text = prompt("Введите текст и мы перевернём его!");
 
-    if (String(text)) {
+    if (text) {
         text = text.split('').reverse().join("").toLowerCase();
         alert(text);
     } else {
@@ -130,6 +130,72 @@ function gameFive() {
 
 
 
+// Игра № 4
+
+function gameFour() {
+    
+    let userChoice = prompt(`Приветствую, друг! Выбери своё оружие. Камень, ножницы или бумага? Напиши, что выбрал.`);
+    userChoice = userChoice.toLowerCase();
+
+    const choice = [`камень`, `ножницы`, `бумага`]; 
+    const choiceId = Math.floor(Math.random() * (choice.length));
+    let randomPc = choice[choiceId];
+
+    console.log(randomPc);
+
+    const resaltComparison = (userChoice, randomPc) => {
+
+        if ((userChoice === 'камень' && randomPc === 'ножницы') || 
+            (userChoice === 'ножницы' && randomPc === 'бумага') ||
+            (userChoice === 'бумага' && randomPc === 'камень')) {
+            return `Победа твоя! Компьютер выбрал "${randomPc}"`;
+        }
+    
+        if ((userChoice === 'ножницы' && randomPc === 'камень') || 
+            (userChoice === 'бумага' && randomPc === 'ножницы') ||
+            (userChoice === 'камень' && randomPc === 'бумага')) {
+            return `Проигрыш. В следующий раз повезёт! Компьютер выбрал "${randomPc}"`;
+        }
+    
+        if (userChoice === randomPc) {
+            return `Ничья. Компьютер выбрал "${randomPc}"`;
+        }
+    
+        if (!choice.includes(userChoice)){
+            return `Введено неверное значение. Попробуй ещё раз!`;
+        }
+        return `Вы проиграли. Выбор компьютера "${randomPc}"`;
+           
+    }
+    alert(resaltComparison(userChoice, randomPc));
+
+}
+
+
+// Игра № 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -157,4 +223,4 @@ function gameFive() {
 // } else {
 //     alert("Неверное значение. Введите число от 1 до 100.");
 // }
-// console.log(generateRandom); 
+// console.log(generateRandom);
